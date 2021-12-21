@@ -1,0 +1,48 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,e,f,g,ch;
+    printf("\n  enter two variables a and b here :");
+    scanf("%d %d",&a,&b);
+    printf("\n enter case \n 1. addition \n 2. difference \n 3. multiplication ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+           addition:
+        case 1:
+        c=a+b;
+        printf("\n sum of two numbers is %d",c);
+        break;
+        
+        substraction:
+        case 2:
+        d=a-b;
+        printf("\n difference of two numbers is %d",d);
+        break;
+        
+        multiplication:
+        case 3:
+        e=a*b;
+        printf("\n product of two numbers is %d",e);
+        break;
+        
+        division:
+        case 4:
+        f=a/b;
+        printf("a/b =%d",f);
+        break;
+        
+        case 5:
+        goto multiplication;
+        break;
+        
+    default:
+    printf("error: enter correct choice");
+    }
+    
+  return 0;
+}
+    
+
