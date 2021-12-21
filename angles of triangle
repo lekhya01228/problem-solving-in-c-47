@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int a1,a2,a3,total;
+    printf("enter first angle ");
+    scanf("%d",&a1);
+    printf("enter second angle");
+    scanf("%d",&a2);
+    total=a1+a2;
+    a3=180-total;
+    printf("the third angle is %d",a3);
+    
+
+    return 0;
+}
